@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script> <!--jQueryをCDNから取得-->
+<script type="text/javascript" src="turn.js"></script>
+</head>
+<body>
+<div id="flipbook">
+    <div class="hard"><div class="Vibrionaceae">Vibrionaceae</div><img src="img/1.jpg" class="photo1"></img></div>
+    <div><div class="pagenumber">1</div><img src="img/2.png" class="photo2"></div>
+    <div><div class="pagenumber">2</div><img src="img/3.png" class="photo2"></div>
+    <div><div class="pagenumber">3</div><img src="img/4.png" class="photo2"></div>
+    <div><div class="pagenumber">fin</div><img src="img/5.png" class="photo2"></div>
+    <div class="hard"></div>
+</div>
+</body>
+<script type="text/javascript">
+    $("#flipbook").turn({
+        width:922,
+        height:600,
+		autoCenter: true
+    });
+   
+</script>
+</html>
